@@ -1,5 +1,9 @@
 package section2.question2
 
+/*
+2. Explain the differences between TreeMap, HashMap, and LinkedHashMap.
+Provide an example of when each one would be best.
+ */
 fun main() {
     hashMapDemo()
 }
