@@ -8,12 +8,19 @@ A.You should not use if-else or any other comparison operator. B. Use a comparis
 C. Compare time-complexity for A & B above.
  */
 
-fun maximumOfTwoNumbersWithoutComparisonOperators(x: Int, y: Int): Int {
+//Time complexity of O(1)
+fun maximumOfTwoNumbersWithoutComparisonOperators(x: Int, y: Int) {
     //To find the maximum number using a mathematical expression
-    return ((x + y) + abs(x - y)) / 2
+    val answer = ((x + y) + abs(x - y)) / 2
+    println("Without comparison operators --> $answer")
 }
 
-fun maximumOfTwoNumbersWithComparisonOperators(x: Int, y: Int): Int {
+//Time complexity of O(1)
+fun maximumOfTwoNumbersWithComparisonOperators(x: Int, y: Int) {
     //To find the maximum number using conditional expressions
-    return if (x > y) x else y
+    if (x > y) {
+        println("With comparison operators --> $x")
+    } else {
+        println("With comparison operators --> $y")
+    }
 }
