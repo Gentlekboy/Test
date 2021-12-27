@@ -9,8 +9,8 @@ that computes the total population of a given continent,
 given a list of all countries and the name of a continent.
  */
 public class Country {
-    private String continent;
-    private int population;
+    private final String continent;
+    private final int population;
 
     public Country(String continent, int population) {
         this.continent = continent;
@@ -21,15 +21,8 @@ public class Country {
         return continent;
     }
 
-    public void setContinent(String continent) {
-        this.continent = continent;
-    }
-
     public int getPopulation() {
         return population;
     }
 
-    public void setPopulation(int population) {
-        this.population = population;
-    }
 }
